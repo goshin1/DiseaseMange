@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>질병관리본부</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="script/jquery-3.4.1.js" defer></script>
+    <script src="script/script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="center">
+        <hr>
+
+        <div id="mainheader">
+            <div>
+                <a id="logo" href="./index.html"><img src="./img/logo.png" alt="logo_no"></a>
+
+                <form id="search" name="fas" method="post">
+                    <input type="text" placeholder="검색어를 입력해주세요.">
+                    <input type="submit" value="">
+                </form>
+
+                <div id="popular">
+                    <ul>
+                        <li><a href="#"> ① 코로나19</a></li>
+                        <li><a href="#"> ② 메르스</a></li>
+                        <li><a href="#"> ③ 자가격리</a></li>
+                        <li><a href="#"> ④ 코로나19예방수칙</a></li>
+                        <li><a href="#"> ⑤ 손씻기</a></li>
+                        <li><a href="#"> ⑥ 대응지침</a></li>
+                        <li><a href="#"> ⑦ 마스크</a></li>
+                        <li><a href="#"> ⑧ 포스터</a></li>
+                        <li><a href="#"> ⑨ 방역</a></li>
+                        <li><a href="#"> ⑩ 사회적거리두기</a></li>
+                    </ul>
+
+                </div>
+
+                <ul>
+
+                    <li id="undermenu"><a href="#">
+                            <img src="./img/arrow.png" alt="image_no">
+                        </a>
+
+                        <ul id="underlist">
+                            <li><a href="#">인기검색어</a></li>
+                            <li><a href="#">1 &nbsp;코로나19</a></li>
+                            <li><a href="#">2 &nbsp;메르스</a></li>
+                            <li><a href="#">3 &nbsp;자가격리</a></li>
+                            <li><a href="#">4 &nbsp;코로나19예방수칙</a></li>
+                            <li><a href="#">5 &nbsp;손씻기</a></li>
+                            <li><a href="#">6 &nbsp;대응지침</a></li>
+                            <li><a href="#">7 &nbsp;마스크</a></li>
+                            <li><a href="#">8 &nbsp;포스터</a></li>
+                            <li><a href="#">9 &nbsp;방역</a></li>
+                            <li><a href="#">10 &nbsp;사회적거리두기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <a href="#" id="ENG">ENG</a>
+
+                <a href="#" id="bar"><img src="./img/bar.png" alt="image_no"></a>
+
+            </div>
+            <div class="clear"></div>
+
+            <nav class="standmenu">
+                <ul id="main_menu">
+                    <li><a href="#">감염병</a>
+                        <ul class="stand_sub sub1">
+                            <li><a href="#">감염병정보</a></li>
+                            <li><a href="#">해외감염정보</a>
+                                <ul class="detail_sub">
+                                    <li><a href="#">&#8226; 해외질병</a></li>
+                                    <li><a href="#">&#8226; 해외감염병NOW</a></li>
+                                    <li><a href="#">&#8226; 예방접종정보</a></li>
+                                    <li><a href="#">&#8226; 국가별요구사항</a></li>
+                                </ul>
+
+                            </li>
+                            <li><a href="#">감염병유행정보</a></li>
+                            <li><a href="#">결핵</a></li>
+                            <li><a href="#">예방접종</a></li>
+                            <li><a href="#">감염병간행물</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="#">건강정보</a>
+                        <ul class="stand_sub sub2">
+                            <li><a href="#">손상정보</a>
+                                <ul class="detail_sub">
+                                    <li><a href="#">&#8226; 교통사고</a></li>
+                                    <li><a href="#">&#8226; 어린이손상</a></li>
+                                    <li><a href="#">&#8226; 약수</a></li>
+                                    <li><a href="#">&#8226; 자해/자살</a></li>
+                                    <li><a href="#">&#8226; 직업손상</a></li>
+                                    <li><a href="#">&#8226; 질식</a></li>
+                                    <li><a href="#">&#8226; 추락/낙상</a></li>
+                                    <li><a href="#">&#8226; 폭력/타살</a></li>
+                                    <li><a href="#">&#8226; 화상</a></li>
+                                </ul>
+
+                            </li>
+                            <li><a href="#">국가건강정보포털</a></li>
+                            <li><a href="#">희귀질환정보</a></li>
+                            <li class="image_li health_image"><img src="./img/healthimformation.PNG" alt="image_no"><a href="http://health.cdc.go.kr/health/Main.do" class="green_button" target="_blank">국가건강정보포털 바로가기<span>&gt;</span></a></li>
+                        </ul>
+
+
+                    </li>
+                    <li><a href="#">정책정보</a>
+                        <ul class="stand_sub sub3">
+                            <li><a href="#">감염병</a>
+                                <ul class="detail_sub">
+                                    <li><a href="#">&#8226; 감염병위기대응</a></li>
+                                    <li><a href="#">&#8226; 수인성식품매개감염병관리</a></li>
+                                    <li><a href="#">&#8226; 호흡기감염병관리</a></li>
+                                    <li><a href="#">&#8226; 인수공통감염병관리</a></li>
+                                    <li><a href="#">&#8226; 결핵관리</a></li>
+                                    <li><a href="#">&#8226; 후천성면역결핍증관리</a></li>
+                                    <li><a href="#">&#8226; 의료감염관리</a></li>
+                                    <li><a href="#">&#8226; 감염병실험분석</a></li>
+                                    <li><a href="#">&#8226; 검역관리</a></li>
+                                    <li><a href="#">&#8226; 감염병감시체계</a></li>
+                                    <li><a href="#">&#8226; 감염병정보화사업</a></li>
+                                    <li><a href="#">&#8226; 시도감염병관리지원단</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">생물안전</a>
+                                <ul class="detail_sub">
+                                    <li><a href="#">&#8226; 생물안전및보안</a></li>
+                                    <li><a href="#">&#8226; 고위험병원체국가관리</a></li>
+                                    <li><a href="#">&#8226; 유전자변형생물체국가승인</a></li>
+                                    <li><a href="#">&#8226; 생물안전연구시설국가안전관리</a></li>
+                                    <li><a href="#">&#8226; 병원체생물안전정보</a></li>
+                                    <li><a href="#">&#8226; 자료실</a></li>
+                                </ul>
+
+
+                            </li>
+                            <li><a href="#">만성질환</a>
+                                <ul class="detail_sub">
+                                    <li><a href="#">&#8226; 건강조사</a></li>
+                                    <li><a href="#">&#8226; 만성질환예방관리</a></li>
+                                    <li><a href="#">&#8226; 기준관리</a></li>
+                                    <li><a href="#">&#8226; 희귀질환관리</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">기후변화</a>
+                                <ul class="detail_sub">
+                                    <li><a href="#">&#8226; 폭염</a></li>
+                                    <li><a href="#">&#8226; 한파</a></li>
+                                    <li><a href="#">&#8226; 미세먼지</a></li>
+                                    <li><a href="#">&#8226; 기후변화건강적응대책</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">의료방사성안전관리</a>
+                                <ul class="detail_sub">
+                                    <li><a href="#">&#8226; 방사선피폭빛방어</a></li>
+                                    <li><a href="#">&#8226; 의료방사선게시판</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">장기&#8226;조직&#8226;혈액관리</a>
+                                <ul class="detail_sub">
+                                    <li><a href="#">&#8226; 장기&#8226;인체조직관리</a></li>
+                                    <li><a href="#">&#8226; 혈액안전감시</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+
+
+                    </li>
+                    <li><a href="#">연구개발</a>
+                        <ul class="stand_sub sub4">
+                            <li><a href="#">질병연구</a>
+                                <ul class="detail_sub">
+                                    <li><a href="#">&#8226; 질병연구</a></li>
+                                    <li><a href="#">&#8226; 범부처감염병대응R&amp;D</a></li>
+                                    <li><a href="#">&#8226; 수시기술수요</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">연구성과</a></li>
+                            <li><a href="#">연구자원인프라</a></li>
+                            <li><a href="#">생명윤리</a></li>
+                            <li class="image_li labo_image"><img src="./img/labo.PNG" alt="image_no"><a href="http://www.nih.go.kr/" class="green_button" target="_blank">국립보건연구원 바로가기<span>&gt;</span></a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="#">알림.자료</a>
+                        <ul class="stand_sub sub5">
+                            <li><a href="#">이달의건강소식</a></li>
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">포토뉴스</a></li>
+                            <li><a href="#">홍보자료</a>
+                                <ul class="detail_sub">
+                                    <li><a href="#">&#8226; 카드뉴스</a></li>
+                                    <li><a href="#">&#8226; 홍보지</a></li>
+                                    <li><a href="#">&#8226; 영상자료</a></li>
+                                    <li><a href="#">&#8226; 라디오음원</a></li>
+                                    <li><a href="#">&#8226; 교육자료</a></li>
+                                </ul>
+
+                            </li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">공고/공시</a></li>
+
+                            <li class="under_sub"><a href="#">채용공고</a></li>
+                            <li class="under_sub"><a href="#">법령&#8226;지침&#8226;서식</a>
+                                <ul class="detail_sub">
+                                    <li><a href="#">&#8226; 법령</a></li>
+                                    <li><a href="#">&#8226; 지침</a></li>
+                                    <li><a href="#">&#8226; 서식</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="under_sub"><a href="#">공무국외여행보고서</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li><a href="#">간행물.통계</a>
+                        <ul class="stand_sub sub6">
+                            <li><a href="#">간행물</a>
+                                <ul class="detail_sub">
+                                    <li><a href="">&#8226; 주간건강과질병</a></li>
+                                    <li><a href="">&#8226; 감염병뉴스레터</a></li>
+                                    <li><a href="">&#8226; 지역사회건강과질병</a></li>
+                                    <li><a href="">&#8226; 손상에방과건강한안전사회</a></li>
+                                    <li><a href="">&#8226; 혈액소식지</a></li>
+                                    <li><a href="">&#8226; 오송 PHRP</a></li>
+                                    <li><a href="">&#8226; 질병관리백서</a></li>
+                                    <li><a href="">&#8226; 국립보건연구원연보</a></li>
+                                    <li><a href="">&#8226; NH매거진</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">통계</a>
+                                <ul class="detail_sub">
+                                    <li><a href="">&#8226; 감염병발생정보</a></li>
+                                    <li><a href="">&#8226; 감염병연보</a></li>
+                                    <li><a href="">&#8226; 건강통계</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">연구성과</a></li>
+                            <li class="image_li total_image"><img src="./img/total.PNG" alt="image_no"><a href="http://www.cdc.go.kr/npt/" class="green_button" target="_blank">감염병포털 바로가기<span>&gt;</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">민원.정보공개</a>
+                        <ul class="stand_sub sub7">
+                            <li><a href="#">1339콜센터</a></li>
+                            <li><a href="#">민원신청</a></li>
+                            <li><a href="#">나의민원확인</a></li>
+                            <li><a href="#">생명윤리법관련안내</a></li>
+                            <li><a href="#">사전정보공표</a></li>
+                            <li><a href="#">정보공개청구</a></li>
+                            <li class="under_sub2"><a href="#">공공데이터</a></li>
+                            <li class="under_sub2"><a href="#">기관정업무추진비</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li><a href="#">기관소개</a>
+                        <ul class="stand_sub sub8">
+                            <li><a href="#">소개</a>
+                                <ul class="detail_sub">
+                                    <li><a href="">&#8226; 인사말</a></li>
+                                    <li><a href="">&#8226; 약력</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">비전과미션</a></li>
+                            <li><a href="#">핵심사업</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">조직&#8226;직원찾기</a></li>
+                            <li><a href="#">정보상징</a></li>
+                            <li class="under_sub3"><a href="#">오시는길</a></li>
+                            <li class="under_sub3"><a href="#">시설안내</a></li>
+                            <li class="under_sub3"><a href="#">누리집이용안내</a>
+                                <ul class="detail_sub">
+                                    <li><a href="">&#8226; 이용안내</a></li>
+                                    <li><a href="">&#8226; 사이트맵</a></li>
+                                    <li><a href="">&#8226; 개인정보처리방침</a></li>
+                                    <li><a href="">&#8226; 웹접근성품질인증</a></li>
+                                    <li><a href="">&#8226; 저작권정책</a></li>
+                                    <li><a href="">&#8226; 메인배너</a></li>
+                                    <li><a href="">&#8226; 알림존</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <li><a href="#">사업별 홈페이지</a>
+                        <div class="stand_sub sub9">
+                            <ul class="">
+                                <li><a href="#">감염병포털</a></li>
+                                <li><a href="#">예방접종도우미</a></li>
+                                <li><a href="#">해외감염병NOW</a></li>
+                                <li><a href="#">국립검역소</a></li>
+                                <li><a href="#">KISED</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">결핵제로</a></li>
+                                <li><a href="#">국가건강정보포털</a></li>
+                                <li><a href="#">희귀질환헬프라인</a></li>
+                                <li><a href="#">국민건강영양조사</a></li>
+                                <li><a href="#">지역사회건강조사</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">청소년건강형태조사</a></li>
+                                <li><a href="#">국립장기조직혈액관리원</a></li>
+                                <li><a href="#">프리온질환저해물질</a></li>
+                                <li><a href="#">국립의과학지식센터</a></li>
+                                <li><a href="#">오송PHRP</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">임상연구정보서비스</a></li>
+                                <li><a href="#">임상연구관리시스템</a></li>
+                                <li><a href="#">임상유전체생명정보</a></li>
+                                <li><a href="#">줄기세포주등록정보</a></li>
+                                <li><a href="#">OneHealthAMR포털시스템</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">국립중앙인체자원은행</a></li>
+                                <li><a href="#">국가병원체자원은행</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+        
+        <div id="fixe_menu">
+            <p>사용자별<br>맞춤메뉴</p>
+            <p>일반인</p>
+            <p>연구자</p>
+            <p>언론인</p>
+        </div>
+        
+    </header>
+    <!--header area END-->
+
+   
+    <!--section area START-->
+    <div id="main_section">
+
+        <div class="main_notice">
+            <div class="main_image">
+                <img src="img/mainImage.jpg" alt="image_no">
+            </div>
+            <ul class="banner_menu">
+                <li><a href="./ondo.html">
+                    <img src="./img/section1.png" alt="image_no">
+                    <p class="banner_p">온열질환 건강수칙</p>
+                </a>
+                </li>
+                
+                <li><a href="./bibrio.html">
+                    <img src="./img/section2.png" alt="image_no">
+                    <p class="banner_p">비브리오패혈증 예방수칙</p>
+                </a>
+                </li>
+                
+                <li><a href="./mise.html">
+                    <img src="./img/section3.jpg" alt="image_no">
+                    <p class="banner_p">미세먼지 건강수칙</p>
+                </a>
+                </li>
+                
+                <li><img src="./img/section4.jpg" alt="image_no">
+                    <p class="banner_p">코로나19 영상자료</p>
+                </li>
+            </ul>
+
+            <div id="service">
+                <img src="img/service.png" id="pop_image" alt="image_no">
+                <ul id="service_menu">
+                    <li class="service_li">
+                        <div></div>국가질병정보
+                    </li>
+                    <li class="service_li">
+                        <div></div>홍보자료
+                    </li>
+                    <li class="service_li">
+                        <div></div>간행물통계
+                    </li>
+                    <li class="service_li">
+                        <div></div>조직도&#8226;직원찾기
+                    </li>
+                    <li class="service_li">
+                        <div></div>법령&#8226;지침&#8226;서식
+                    </li>
+                    <li class="service_li">
+                        <div></div>공고/공시
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <div id="notice">
+                <p class="btn_first btn">보도자료</p>
+                <div class="notice_item it1">
+                    <p>코로나바이러스감염증-19 국내발생...</p>
+                    <p>코로나바이러스감염증-19 국내 발샹 현황(6월 22일), 정례브리핑<br>
+                        질병관리본부 중앙반역대책본부(본부장 정은경)는 6월22일0시 현<br>
+                        재,지역사회11명,해외유입6명(총...<br><br>
+                        2020-06-22</p>
+                    <ul class="it1_menu">
+                        <li>전국 내륙 올여름 최고 더위,온열질환 예방위한...</li>
+                        <li>코로나바이러스감염증-19 국내 발생 현황 (6월...</li>
+                        <li>코로나바이러스감염증-19 국내 발생 현황 (6월...</li>
+                        <li>코로나바이러스감염증-19 국내 발생 현황 (6월...</li>
+                    </ul>
+
+                </div>
+
+                <p class="btn_second btn">공지사항</p>
+                <div class="notice_item it2">
+                    <p>국립중앙인체자원은행 영문홈페이지</p>
+                    <p>국립중안인체자원은행 영문 홈페이지 디자인 시안 공모 1.공모개요<br>
+                        공모명 : 국립중앙인체자원은행 영문 홈페이지 디자인 시안공모<br>
+                        공모기간...<br><br>
+                        2020-06-16</p>
+                    <ul class="it1_menu">
+                        <li>코로나 19대응을 위한 질병관리본부 연구용역...</li>
+                        <li>코로나19 혈장치료제 개발을 위한혈액공여자...</li>
+                        <li>피싱메일 안내문</li>
+                        <li>국민소통단4기 최종 합격자 발표</li>
+                    </ul>
+                </div>
+
+                <p class="btn_three btn">채용공고</p>
+                <div class="notice_item it3">
+                    <p>2020년 질병관리본부 한시임기제공무...</p>
+                    <p>[질병관리본부 공고 제2020-555호] 2020년 질병관리본부 한시임<br>
+                        기제공무원(위기소통 분야)경력경쟁체용시험 최종합격자를 붙임과<br>
+                        같이 공고합니다.2020년 6월2...<br><br>
+                        2020-06-22</p>
+                    <ul class="it1_menu">
+                        <li>2020년 질병관리본부 전문임기제공무원(국제...</li>
+                        <li>2020년 2차 질병관리본부 기간제근로자 채용...</li>
+                        <li>2020년 질병관리본부 연구직공무원(보건연구...</li>
+                        <li>2020년 질병관리본부 한시임기제공무원채용...</li>
+                    </ul>
+                </div>
+
+                <p class="btn_for btn">주간건강과질병</p>
+                <div class="notice_item it4">
+                    <p>[코로나19 주간 발생보고서] 코로나바...</p>
+                    <p>[코로나19 주간 발생보고서]코로나바이러스감염증-19 주간 발생보<br>
+                        고서(2020.6.13.기준)...<br><br>
+                        2020-06-18</p>
+                    <ul class="it1_menu">
+                        <li>2019년 국외 메르스 발생 현황</li>
+                        <li>2016년~2019년 크로이츠펠트-야콥병 발생 현황</li>
+                        <li>국내 다중이용시설 유래 레지오넬라 환경균주...</li>
+                        <li>[코로나19 주간 발생보고서] 코로나바이러스감...</li>
+                    </ul>
+
+                </div>
+                <p class="plus btn">더보기+</p>
+            </div>
+            <div id="information_menu">
+                <p class="if_btn1 if_btn">감염병정보</p>
+                <div class="information_div if_div1">
+                    <ul id="hangle_menu">
+                        <li>
+                            <ul class="hangles">
+                                <li>ㄱ</li>
+                                <li>ㄴ</li>
+                                <li>ㄷ</li>
+                                <li>ㄹ</li>
+                                <li>ㅁ</li>
+                                <li>ㅂ</li>
+                                <li>ㅅ</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="hangles">
+                                <li>ㅇ</li>
+                                <li>ㅈ</li>
+                                <li>ㅊ</li>
+                                <li>ㅋ</li>
+                                <li>ㅌ</li>
+                                <li>ㅍ</li>
+                                <li>ㅎ</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div id="virus">
+                        <p>메르스</p>
+                        <p>인플루엔자</p>
+                        <p>지카바이러스</p>
+                        <p>결핵</p>
+                        <p>노로바이러스</p>
+                        <p>A형간염</p>
+                        <p>더보기+</p>
+                    </div>
+
+                </div>
+
+                <p class="if_btn2 if_btn">건강정보</p>
+                <div class="information_div if_div2">
+                    <ul id="health_list">
+                        <li>
+                            <ul class="icon_list ic1">
+                                <li>
+                                    <div></div>전체
+                                </li>
+                                <li>
+                                    <div></div>주요주제
+                                </li>
+                                <li>
+                                    <div></div>노인
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="icon_list ic2">
+                                <li>
+                                    <div></div>남성
+                                </li>
+                                <li>
+                                    <div></div>여성
+                                </li>
+                                <li>
+                                    <div></div>소아
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="if_btn3 if_btn">손상정보</p>
+                <div class="information_div if_div3">
+                    <ul id="hult_info">
+                        <li>
+                            <ul class="hult_list">
+                                <li>교통사고</li>
+                                <li>어린이손상</li>
+                                <li>익수</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="hult_list">
+                                <li>자해/자살</li>
+                                <li>직업손상</li>
+                                <li>질식</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="hult_list">
+                                <li>추락/낙상</li>
+                                <li>폭력/타살</li>
+                                <li>화상</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="clear aread"></div>
+
+            <div id="slide_menu">
+
+                <div class="banner_slide">
+                    <p class="banner_title">배너존</p>
+                    <ul>
+                        <li class="slide_img"><img src="./img/bannerzone/banner1.jpg" alt="image_no"></li>
+                        <li class="slide_img"><img src="./img/bannerzone/banner2.jpg" alt="image_no"></li>
+                        <li class="slide_img"><img src="./img/bannerzone/banner3.jpg" alt="image_no"></li>
+                        <li class="slide_img"><img src="./img/bannerzone/banner4.jpg" alt="image_no"></li>
+                        <li class="slide_img"><img src="./img/bannerzone/banner5.jpg" alt="image_no"></li>
+                        <li class="slide_img"><img src="./img/bannerzone/banner6.jpg" alt="image_no"></li>
+                        <li class="slide_img"><img src="./img/bannerzone/banner7.jpg" alt="image_no"></li>
+                        <li class="slide_img"><img src="./img/bannerzone/banner8.jpg" alt="image_no"></li>
+                        <li class="slide_img"><img src="./img/bannerzone/banner9.jpg" alt="image_no"></li>
+                    </ul>
+                </div>
+
+                <div class="banner_slide">
+                    <p class="banner_title">알림존</p>
+                    <img src="./img/openzone.jpg" alt="image_no">
+                </div>
+
+                <div class="banner_slide card">
+                    <p class="banner_title">카드뉴스</p>
+                    <ul>
+                        <li class="slide_img"><img src="./img/cardnews/cardnews1.png" alt="image_no"></li>
+                        <li class="slide_img"><img src="./img/cardnews/cardnews2.png" alt="image_no"></li>
+                        <li class="slide_img"><img src="./img/cardnews/cardnews3.jpg" alt="image_no"></li>
+                        <li class="slide_img"><img src="./img/cardnews/cardnews4.jpg" alt="image_no"></li>
+                        <li class="slide_img"><img src="./img/cardnews/cardnews5.jpg" alt="image_no"></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="SNS">    
+                <img src="./img/SNSnotice.png" alt="image_no" id="sns_title">
+                <div id="snscon">
+                    <span>질병 관련 정보를</span><br>
+                    <p>국민여러분께 신속히 제공하겠습니다</p>
+                    <p>국가공중보건관리 중추기관으로서 국민 건강을 증진하고, 전문성&#8226;혁신&#8226;소통&#8226;신뢰를<br>
+                    기반으로 24시간 365일 최선을 다하겠습니다.</p>
+                </div>
+                <ul id="snsicon">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <!--ID를 class로 바꾸기-->
+            <div class="compain">
+                <ul class="compain_menu">
+                    <li><img src="./img/section5.png" alt="image_no">
+                        <p class="compain_p">진짜 힘은 손 씻을 때 생긴다!<br><span>마블 콜라보 질병예방 캠페인</span></p>
+                    </li>
+                    <li><img src="./img/section6.png" alt="image_no">
+                        <p class="compain_p">중동지역을 방문하셨나요?<br><span>메르스 의심증상 발생시 1339</span></p>
+                    </li>
+                    <li><img src="./img/section7.png" alt="image_no">
+                        <p class="compain_p">기침예절 지켜요<br><span>기침예절은 감염병 예방의 기본수칙</span></p>
+                    </li>
+                    <li><img src="./img/section8.png" alt="image_no">
+                        <p class="compain_p">1339 질병관리본부 콜센터<br><span>질병정보 궁금할 때 감영병이 의심될 때</span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <!--section area END-->
+
+    <!--footer area START-->
+    <footer>
+
+        <ul>
+            <li><a href="#" id="relation_link">관련링크</a></li>
+            <li id="left"><a href="#left"><img src="./img/arrow.png" alt="image_no"></a></li>
+            <li id="right"><a id="right_bt" href="#right"><img src="./img/arrow.png" alt="image_no"></a>
+                <ul id="relation_list">
+                    <li><a href="#">임상진료지침 디지털 가이드라인</a></li>
+                    <li><a href="#">KoGES</a></li>
+                    <li><a href="#">질병관리본부국제학술지(Osong PHRP)</a></li>
+                    <li><a href="#">만성신장병코호트연구</a></li>
+                    <li><a href="#">국민건강영양조사</a></li>
+                    <li><a href="#">국립의과학지식센터</a></li>
+                    <li><a href="#">보건복지통계</a></li>
+                    <li><a href="#">임상진료지침정보센터</a></li>
+                    <li><a href="#">질병보건통합관리시스템</a></li>
+                </ul>
+
+            </li>
+        </ul>
+
+
+        <div id="tomuch">
+            <ul id="policy">
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">웹접근성품질인증</a></li>
+                <li><a href="#">저작권정책</a></li>
+            </ul>
+
+            <ul id="institution">
+                <li class="sub_on"><a href="#institution">질병관리본부 관련기관</a><img src="./img/arrow.png" alt="image_no">
+                    <ul id="first_sub" class="sub">
+                        <li><a href="#">영국공공보건국[PHE]</a></li>
+                        <li><a href="#">일본감염병연구소[NIID]</a></li>
+                        <li><a href="#">세계보건기구[WHO]</a></li>
+                        <li><a href="#">유럽질병통제예방센터[ECDC]</a></li>
+                        <li><a href="#">미국질병통제예방센터[CDC]</a></li>
+                    </ul>
+
+                </li>
+                <li class="sub_on"><a href="#institution">보건환경연구원</a><img src="./img/arrow.png" alt="image_no">
+                    <ul id="second_sub" class="sub">
+                        <li><a href="#">서울특별시 보건환경연구원</a></li>
+                        <li><a href="#">부산광역시 보건환경연구원</a></li>
+                        <li><a href="#">대구광역시 보건환경연구원</a></li>
+                        <li><a href="#">인천광역시 보건환경연구원</a></li>
+                        <li><a href="#">광주광역시 보건환경연구원</a></li>
+                        <li><a href="#">대전광역시 보건환경연구원</a></li>
+                        <li><a href="#">울산광역시 보건환경연구원</a></li>
+                        <li><a href="#">경기도 보건환경연구원</a></li>
+                        <li><a href="#">강원도 보건환경연구원</a></li>
+                        <li><a href="#">충정북도 보건환경연구원</a></li>
+                        <li><a href="#">충정남도 보건환경연구원</a></li>
+                        <li><a href="#">전라북도 보건환경연구원</a></li>
+                        <li><a href="#">전라남도 보건환경연구원</a></li>
+                        <li><a href="#">경상북도 보건환경연구원</a></li>
+                        <li><a href="#">경상남도 보건환경연구원</a></li>
+                        <li><a href="#">제주특별차지도 보건환경연구원</a></li>
+                        <li><a href="#">세종시보건환경연구원</a></li>
+
+                    </ul>
+
+                </li>
+                <li class="sub_on"><a href="#institution">보건복지부 및 소속기관</a><img src="./img/arrow.png" alt="image_no">
+                    <ul id="three_sub" class="sub">
+                        <li><a href="#">보건복지부</a></li>
+                        <li><a href="#">국립보건연구원</a></li>
+                        <li><a href="#">국립검역소</a></li>
+                        <li><a href="#">국립정신건강센터</a></li>
+                        <li><a href="#">국립나주병원</a></li>
+                        <li><a href="#">국립부곡병원</a></li>
+                        <li><a href="#">국립춘천병원</a></li>
+                        <li><a href="#">국립공주병원</a></li>
+                        <li><a href="#">국립소록도병원</a></li>
+                        <li><a href="#">국립재활원</a></li>
+                        <li><a href="#">국립마산병원</a></li>
+                        <li><a href="#">국립목포병원</a></li>
+                        <li><a href="#">오송생명과학단지지원센터</a></li>
+                    </ul>
+
+                </li>
+                <li class="sub_on"><a href="#institution">보건복지부 산하기관</a><img src="./img/arrow.png" alt="image_no">
+                    <ul id="for_sub" class="sub last">
+                        <li><a href="#">국민건강보험공단</a></li>
+                        <li><a href="#">건강보험심사평가원</a></li>
+                        <li><a href="#">국민연금공단</a></li>
+                        <li><a href="#">한국보건산업진흥원</a></li>
+                        <li><a href="#">한국보건복지인력개발원</a></li>
+                        <li><a href="#">사회보장정보원</a></li>
+                        <li><a href="#">한국국제보건의료재단</a></li>
+                        <li><a href="#">한국사회복지협의회</a></li>
+                        <li><a href="#">국립중앙의료원</a></li>
+                        <li><a href="#">한국노인인력개발원</a></li>
+                        <li><a href="#">국립암센터</a></li>
+                        <li><a href="#">(재)한국장애인개발원</a></li>
+                        <li><a href="#">대학접식자사</a></li>
+                        <li><a href="#">(재)한국보육진흥원</a></li>
+                        <li><a href="#">한국보건의료인국가시험원</a></li>
+                        <li><a href="#">한국건강증진개발원</a></li>
+                        <li><a href="#">한국의료분쟁조정증재원</a></li>
+                        <li><a href="#">한국보건의료연구원</a></li>
+                        <li><a href="#">한국보건사회연구원</a></li>
+                        <li><a href="#">한국장애인재활협회</a></li>
+                        <li><a href="#">한국장기조직기증원</a></li>
+                        <li><a href="#">(재)의료기관평가인증원</a></li>
+                        <li><a href="#">한국한의약진흥원</a></li>
+                        <li><a href="#">중앙입양원</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+            <div class="clear"></div>
+            <div id="copy">
+                <p>(28159) 충북 청주시 흥덕구 오송읍 오송생명2로 187 오송보건의료행정타운내 질병관리본부 ☎1339<br>
+                    COPYRIGHT ⓒ 2019 질병관리본부 ALLRIGHTSRESERVED.</p>
+
+
+
+
+                <div id="footer_icon">
+                    <a href="http://www.i-award.or.kr/Web/Assess/FinalCandidateView.aspx?REG_SEQNO=9321" target="_blank"></a>
+                    <a href="http://www.cdc.go.kr/cdc/img/main/goodcontents_cdc.png" target="_blank"></a>
+                    <a href="#footer_icon" target="_self"></a>
+                    <a href="http://www.kogl.or.kr/info/introduce.do" target="_blank"></a>
+                </div>
+
+
+            </div>
+        </div>
+
+    </footer>
+    <!--footer area END-->
+</body></html>
